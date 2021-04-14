@@ -75,6 +75,15 @@ function App(){
            <div className = "temp">
             {Math.round(weather.main.temp)}°c
            </div>
+         
+            <div id = "image">
+             <div className = "inline-block">
+             <img src = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/01d9bc30971807.563b2b13c384b.gif" alt = "rah" width="100" height = "100" class = "center"></img>
+             </div>
+             <div className = "inline-block">
+              <img src = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/c6023f30971807.563b2b13a55cc.gif" alt = "rah1"width="100" height = "100" class = "center"></img> 
+             </div>
+          </div>
            
            <div className = "weather">
              {weather.weather[0].main}
@@ -83,14 +92,7 @@ function App(){
          </div>
          ) : ('')}
           
-             <div id = "image">
-             <div className = "inline-block">
-             <img src = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/01d9bc30971807.563b2b13c384b.gif" alt = "rah" width="100" height = "100" class = "center"></img>
-             </div>
-             <div className = "inline-block">
-              <img src = "https://mir-s3-cdn-cf.behance.net/project_modules/disp/c6023f30971807.563b2b13a55cc.gif" alt = "rah1"width="100" height = "100" class = "center"></img> 
-             </div>
-          </div>
+           
        </main>
     </div>
   )
